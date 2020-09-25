@@ -11,9 +11,9 @@ def shark(pontoon_distance, shark_distance, you_speed, shark_speed, dolphin):
     else:
         return "Shark Bait!"
     # Don't get eaten!
-print((shark(12, 50, 4, 8, True)))
+print(shark(12, 50, 4, 8, True))
 # should return "Alive!"
-print((shark(7, 55, 4, 16, True)))
+print(shark(7, 55, 4, 16, True))
 # should return "Alive!"
-print((shark(24, 0, 4, 8, True)))
+print(shark(24, 0, 4, 8, True))
 # should return "Shark Bait!"

@@ -75,4 +75,34 @@ digits(3264128)
 digits(999999)
 # should return [ 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18 ]
 ```
+---
+CHALLENGE PROBLEM 3:  🎧 DECODE DUBSTEP REMIX! 🎧
 ***
+Polygradus works as a DJ, making dubstep remixes out of old songs.
+You can assume that a song consists of some number of words (that do not contain "WUB").
+--- 
+To make the dubstep remix of this song, Polygradus may insert some number of words "WUB" before the first word of the song (the number may be zero), after the last word (the number may be zero), and between words (at least one between any pair of neighbouring words), and then he glues all the words together, including "WUB", in one string and plays the song at the club.
+---
+For example, a song with the words "I AM X" can transform into a dubstep remix as "WUBWUBIWUBAMWUBWUBX" but cannot transform into "WUBWUBIAMWUBX".
+---
+Recently, Adam heard Polygradus's new dubstep track, but since he isn't into modern music, he decided to figure out the lyrics of the initial song that Polygradus remixed. Help Adam restore the original song.
+---
+# Input
+```
+The input is a single non-empty string that consists of only uppercase English letters.  The string's length does not exceed 200 characters.
+```
+# Output
+```
+Return the words of the initial song that Polycarpus used to make his dubsteb remix. Separate the words with a space.
+```
+# Example and Test Cases below:
+```python
+dubstep_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+  # =>  WE ARE THE CHAMPIONS MY FRIEND
+dubstep_decoder("AWUBBWUBC")
+# should return "A B C"
+dubstep_decoder("AWUBWUBWUBBWUBWUBWUBC")
+# should return "A B C"
+dubstep_decoder("WUBAWUBBWUBCWUB")
+# should return "A B C"
+```
